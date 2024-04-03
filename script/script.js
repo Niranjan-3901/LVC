@@ -60,8 +60,6 @@ function showTestResult(){
     let total_mark=0
     questions.forEach(q=>{
         document.getElementsByName(q).forEach(e=> {
-            console.log(e)
-            console.log(typeof(e))
             if (e.checked){ 
                 if(e.value=="true"){
                     total_mark=total_mark+2
