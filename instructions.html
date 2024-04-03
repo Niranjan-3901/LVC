@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/script/script.js"></script>
+    <title>Instructions</title>
+    <style>
+        *{
+            margin: auto;
+            padding: 10px;
+        }
+        .container{
+            display: flex;
+            gap: 10px;
+            border: 1px  solid black;
+            justify-content: space-around;
+            align-items: center;
+            height: 85vh;
+            text-align: left;
+            border-radius: 10px;
+        }
+        .instructions{
+            margin: auto;
+            height: 95%;
+            overflow-y: auto;
+            border: 2px solid  black;
+            text-align: left;
+            font-size: smaller;
+            padding: 8px;
+            border-radius: 10px;
+        }
+        .video{
+            height: 95%;
+            padding: 8px;
+            border: 2px solid black;
+            height: 95%;
+            border-radius: 10px;
+        }
+        @media only screen and (max-width: 600px){
+            .container{
+                display: flex;
+                justify-items: center;
+                flex-direction: column;
+                align-items: center;
+            }
+            .instructions,.video{
+                width: 95%;
+                max-height: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="instructions">
+            <div class="header">
+            <h2 align="center">LVC instructions:</h2><br/>
+            <p>Welcome to our live virtual classes platform! Here's a guide to help you participate in online sessions seamlessly:</p>
+            <ul>
+                <li>Before the Class:
+                    <ol>
+                        <li><b>Enrollment:</b><p>Ensure you're enrolled in the desired class. You usually receive an enrollment confirmation email with a link to access the virtual classroom.</p></li>
+                        <li><b>System Requirements:</b><p>Check if your computer meets the minimum system requirements, such as a reliable internet connection, a web browser with audio/video capabilities, and a microphone (if required for participation).</p></li>
+                        <li><b>Test Your System (Optional):</b><p>Many platforms offer a "test your system" feature before the class to ensure your audio, video, and connection are functioning properly.</p></li>
+                    </ol>
+                </li>
+                <li>Joining the Class:
+                    <ol>
+                        <li><b>Click the Link:</b><p> At the scheduled class time, click the unique link provided in your enrollment confirmation email or access the class through the platform's user interface.</p></li>
+                        <li><b>Grant Permissions:</b><p>You might be prompted to allow the platform access to your microphone and camera. Click "Allow" to proceed.</p></li>
+                        <li><b>Join as Guest (Optional)</b><p>Some platforms offer guest access for non-enrolled participants. If applicable, join as a guest using the provided credentials.</p></li>
+                    </ol>
+                </li>
+                <li>During the Class:
+                    <ol>
+                        <li>
+                            <b>Audio/Video:</b>
+                            <p>Check if your microphone and camera are enabled (if you wish to participate actively). Some platforms allow you to mute/unmute your audio and video as needed.</p>
+                        </li>
+                        <li>
+                            <b>Presentation:</b>
+                            <p>The instructor will likely share their screen or presentation materials. Pay attention and take notes if needed.</p>
+                        </li>
+                        <li>
+                            <b>Interaction:</b>
+                            <p>Most platforms offer interactive features like chat boxes, Q&A sections, or breakout rooms. Use these tools to ask questions, participate in discussions, or collaborate with classmates (if enabled).</p>
+                        </li>
+                        <li>
+                            <b>Recordings (Optional):</b>
+                            <p>Some classes offer recordings of the sessions for later reference. Check with your instructor or the platform for availability.</p>
+                        </li>
+                    </ol>
+                </li>
+                <li>After the Class:
+                    <ol>
+                        <li>
+                            <b>Feedback (Optional):</b>
+                            <p>You might be prompted to provide feedback about the class or instructor. Your feedback helps us improve the learning experience.</p>
+                        </li>
+                        <li>
+                            <b>Additional Resources:</b>
+                            <p>Instructors may share additional resources through the platform or via email after the class.</p>
+                        </li>
+                        <li>
+                            <b>Upcoming Classes: </b>
+                            <p>Explore upcoming classes on the platform and consider enrolling in ones that interest you.</p>
+                        </li>
+                    </ol>
+                </li>
+                <li>Additional Tips:
+                    <ol>
+                        <li>
+                            <b>Join Early:</b>
+                            <p>Joining the class a few minutes before the start allows time to troubleshoot any technical issues.</p>
+                        </li>
+                        <li>
+                            <b>Dress Professionally (Optional):</b>
+                            <p>While some classes are casual, dressing professionally can help you stay focused and engaged.</p>
+                        </li>
+                        <li>
+                            <b>Respectful Environment:</b>
+                            <p>Maintain a respectful and professional behavior during the class, similar to in-person settings.</p>
+                        </li>
+                        <li>
+                            <b>Minimize Distractions:</b>
+                            <p>Choose a quiet location with minimal distractions to optimize your learning experience.</p>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <div class="video">
+            <h2 align="center" >CEO Speaks!:</h2>
+            <iframe width="250" height="150" src="https://www.youtube-nocookie.com/embed/8Aux7nqu6w8?si=Ie7GvEDrf7AM2x-W&amp;start=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>
