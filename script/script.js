@@ -70,6 +70,7 @@ function showTestResult(){
         })
     })
     alert("You get "+total_mark+" out of "+questions.length*2+" marks.")
+    document.forms['form_question'].reset();
 }
 
 function instruction(){
