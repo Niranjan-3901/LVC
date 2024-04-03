@@ -161,3 +161,21 @@ ul li{
     display: flex;
     justify-content: space-around;
 }
+.Main_Name{
+    font-size: 58px;
+    font-family: Algerian,'Courier New', Courier, monospace;
+    color: darkblue;
+    letter-spacing: -12px;
+}
+.welcome{
+    background-color: #eee;
+    margin: 10px;
+    padding: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration:  underline;
+    font-weight: bold;
+    letter-spacing: 1px;
+    -webkit-text-fill-color: black;
+    text-shadow:  1px 1px 10px rgba(255,0,0,.8);
+    border-radius: 15px;
+}
