@@ -22,6 +22,38 @@
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
     <script src="script/script.js"></script>
+    <style>
+        
+
+        .answers {
+            width: 75%;
+            margin-left: 30px;
+        }
+
+        .que {
+            border: 1px solid black;
+            width: 100%;
+            min-width: 300px;
+            border-radius: 12px;
+            background-color: #fff;
+        }
+
+        .myform1 {
+            border: 2px solid;
+            border-radius: 8px;
+            width: 100%;
+            padding: 10px;
+            background-color: #eee;
+
+        }
+        .questions {
+            display: grid;
+            justify-content: center;
+            margin: auto;
+            gap: 5px;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
@@ -130,34 +162,48 @@
 
     <section>
         <article>
-            <div class="myform">
+            <div class="myform1">
                 <h1 align="center">Online Test</h1>
-                <form class="forms" title="MCQ, 2 Marks for Each">
-
-                    <label for="q1">Q1) HTML is For</label>
-                    <div id="q1" class="answers">
-                        <input type="radio" name="1" id="1a" value="false">
-                        <label for="1a">Dynamic Page</label><br>
-                        <input type="radio" name="1" id="1b" value="true">
-                        <label for="1b">Static Page</label><br>
-                        <input type="radio" name="1" id="1c" value="false">
-                        <label for="1c">None of the Above</label>
+                <hr>
+                <form class="form1" title="MCQ, 2 Marks for Each">
+                    <div class="questions">
+                        <div class="que">
+                            <label for="q1">Q1) HTML is For</label>
+                            <div id="q1" class="answers">
+                                <input type="radio" name="1" id="1a" value="false"><label for="1a">Dynamic
+                                    Page</label><br>
+                                <input type="radio" name="1" id="1b" value="true"><label for="1b">Static
+                                    Page</label><br>
+                                <input type="radio" name="1" id="1c" value="false"><label for="1c">Designing</label><br>
+                                <input type="radio" name="1" id="1d" value="false"><label for="1d">None of the
+                                    Above</label><br>
+                            </div>
+                        </div>
+                        <div class="que">
+                            <label for="q2">Q2) JS is For</label>
+                            <div id="q2" class="answers">
+                                <input type="radio" name="2" id="2a" value="true"><label for="2a">Dynamic
+                                    Page</label><br>
+                                <input type="radio" name="2" id="2b" value="false"><label for="2b">Static
+                                    Page</label><br>
+                                <input type="radio" name="2" id="2c" value="false"><label for="2c">Designing</label><br>
+                                <input type="radio" name="2" id="2d" value="false"><label for="2d">None of the
+                                    Above</label><br>
+                            </div>
+                        </div>
+                        <div class="que">
+                            <label for="q3">Q3) CSS is For</label>
+                            <div id="q3" class="answers">
+                                <input type="radio" name="3" id="3a" value="false"><label for="3a">Dynamic
+                                    Page</label><br>
+                                <input type="radio" name="3" id="3b" value="false"><label for="3b">Static
+                                    Page</label><br>
+                                <input type="radio" name="3" id="3c" value="true"><label for="3c">Designing</label><br>
+                                <input type="radio" name="3" id="3d" value="false"><label for="3d">None of the
+                                    Above</label><br>
+                            </div>
+                        </div>
                     </div>
-                    <label for="q2">Q2) JS is For</label>
-                    <div id="q2" class="answers">
-                        <input type="radio" name="2" id="2a" value="true"><label for="2a">Dynamic Page</label><br>
-                        <input type="radio" name="2" id="2b" value="false"><label for="2b">Static Page</label><br>
-                        <input type="radio" name="2" id="2c" value="false"><label for="2c">None of the Above</label><br>
-                    </div>
-
-                    <label for="q3">Q3) CSS is For</label>
-                    <div id="q3" class="answers">
-                        <input type="radio" name="3" id="2a" value="false"><label for="2a">Dynamic Page</label><br>
-                        <input type="radio" name="3" id="2b" value="false"><label for="2b">Static Page</label><br>
-                        <input type="radio" name="3" id="2c" value="true"><label for="2c">Designing</label><br>
-                        <input type="radio" name="3" id="2d" value="false"><label for="2d">None of the Above</label><br>
-                    </div>
-
                     <div align="center" class="buttons">
                         <input type="button" onclick="showTestResult()" value="Submit" />
                         <input type="reset" value="Reset" />
